@@ -5,18 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "pull_to_refresh",
+            "name": "pull_to_refresh_plus",
             "request": "launch",
             "type": "dart"
         },
         {
-            "name": "pull_to_refresh (profile mode)",
+            "name": "pull_to_refresh_plus (profile mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "profile"
         },
         {
-            "name": "pull_to_refresh (release mode)",
+            "name": "pull_to_refresh_plus (release mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "release"

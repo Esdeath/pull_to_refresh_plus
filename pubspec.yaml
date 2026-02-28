@@ -1,7 +1,16 @@
 name: pull_to_refresh_plus
-description: Pull to refresh widget.
-version: 1.0.0
+description: A powerful Flutter pull-to-refresh and pull-up-to-load-more widget with multiple customizable indicator styles.
+version: 3.0.0
 homepage: https://github.com/Esdeath/pull_to_refresh_plus
+repository: https://github.com/Esdeath/pull_to_refresh_plus
+issue_tracker: https://github.com/Esdeath/pull_to_refresh_plus/issues
+
+topics:
+  - refresh
+  - pull-to-refresh
+  - load-more
+  - listview
+  - scroll
 
 environment:
   sdk: '>=3.0.2 <4.0.0'

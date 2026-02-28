@@ -2,6 +2,8 @@
 
 一个功能强大的 Flutter 下拉刷新和上拉加载更多组件，支持多种自定义指示器样式。
 
+[English](README_EN.md) | 简体中文
+
 ## 特性
 
 - ✅ 支持下拉刷新和上拉加载更多
@@ -483,6 +485,10 @@ RefreshConfiguration(
 
 调用 `_refreshController.resetNoData()` 方法。
 
-## License
+## 许可证
 
 MIT License
+
+---
+
+**其他语言**: [English](README_EN.md)

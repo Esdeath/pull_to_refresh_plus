@@ -1,8 +1,4 @@
-## 0.0.1
+## 3.0.0
 
 * Initial release.
 
-## 1.1.1
-
-* upgrade flutter sdk
-* upgrade readme
