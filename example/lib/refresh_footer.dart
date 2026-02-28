@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pull_to_refresh_plus/pull_to_refresh_plus.dart';
+import 'package:pull_to_refresh_simple/pull_to_refresh_simple.dart';
 
 class RefreshDefaultFooter extends StatefulWidget {
   const RefreshDefaultFooter({super.key});

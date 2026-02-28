@@ -1,7 +1,7 @@
 import 'package:example/refresh_footer.dart';
 import 'package:example/refresh_header.dart';
 import 'package:flutter/material.dart';
-import 'package:pull_to_refresh_plus/pull_to_refresh_plus.dart';
+import 'package:pull_to_refresh_simple/pull_to_refresh_simple.dart';
 
 void main() {
   runApp(const MyApp());

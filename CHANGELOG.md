@@ -2,3 +2,6 @@
 
 * Initial release.
 
+## 3.0.1
+
+* Change pubspec.yaml

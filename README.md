@@ -1,4 +1,4 @@
-# pull_to_refresh_plus
+# pull_to_refresh_simple
 
 一个功能强大的 Flutter 下拉刷新和上拉加载更多组件，支持多种自定义指示器样式。
 
@@ -20,7 +20,7 @@
 
 ```yaml
 dependencies:
-  pull_to_refresh_plus: ^1.0.0
+  pull_to_refresh_simple: ^1.0.0
 ```
 
 然后运行：
@@ -34,7 +34,7 @@ flutter pub get
 ### 1. 导入包
 
 ```dart
-import 'package:pull_to_refresh_plus/pull_to_refresh.dart';
+import 'package:pull_to_refresh_simple/pull_to_refresh.dart';
 ```
 
 ### 2. 创建 RefreshController
@@ -95,7 +95,7 @@ void dispose() {
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:pull_to_refresh_plus/pull_to_refresh.dart';
+import 'package:pull_to_refresh_simple/pull_to_refresh.dart';
 
 void main() {
   runApp(const MyApp());

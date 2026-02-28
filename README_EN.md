@@ -1,4 +1,4 @@
-# pull_to_refresh_plus
+# pull_to_refresh_simple
 
 A powerful Flutter pull-to-refresh and pull-up-to-load-more widget with multiple customizable indicator styles.
 
@@ -20,7 +20,7 @@ Add dependency to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  pull_to_refresh_plus: ^1.0.0
+  pull_to_refresh_simple: ^3.0.1
 ```
 
 Then run:
@@ -34,7 +34,7 @@ flutter pub get
 ### 1. Import the package
 
 ```dart
-import 'package:pull_to_refresh_plus/pull_to_refresh.dart';
+import 'package:pull_to_refresh_simple/pull_to_refresh.dart';
 ```
 
 ### 2. Create RefreshController
@@ -95,7 +95,7 @@ void dispose() {
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:pull_to_refresh_plus/pull_to_refresh.dart';
+import 'package:pull_to_refresh_simple/pull_to_refresh.dart';
 
 void main() {
   runApp(const MyApp());
