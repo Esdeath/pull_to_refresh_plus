@@ -20,7 +20,7 @@ Add dependency to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  pull_to_refresh_simple: ^3.0.1
+  pull_to_refresh_simple: ^3.0.2
 ```
 
 Then run:
