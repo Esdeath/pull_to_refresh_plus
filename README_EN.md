@@ -50,6 +50,7 @@ SmartRefresher(
   controller: _refreshController,
   enablePullDown: true,  // Enable pull-down refresh
   enablePullUp: true,    // Enable pull-up load
+  enableSmartPreload: true, // Enable smart preload
   onRefresh: _onRefresh,
   onLoading: _onLoading,
   header: const ClassicHeader(),
@@ -144,6 +145,7 @@ class _MyAppState extends State<MyApp> {
           controller: _refreshController,
           enablePullDown: true,
           enablePullUp: true,
+          enableSmartPreload: true, // Enable smart preload
           onRefresh: _onRefresh,
           onLoading: _onLoading,
           header: const ClassicHeader(),
@@ -316,6 +318,28 @@ class _MyCustomFooterState extends State<MyCustomFooter> {
   }
 }
 ```
+
+## SmartRefresher Parameters
+
+| Parameter | Type | Default | Description |
+|-----------|------|---------|-------------|
+| controller | RefreshController | - | Controller for controlling refresh and load states, cannot be null |
+| child | Widget? | - | Refresh content widget |
+| header | Widget? | - | Header refresh indicator |
+| footer | Widget? | - | Footer load more indicator |
+| enablePullDown | bool | true | Whether to enable pull-down refresh function |
+| enablePullUp | bool | false | Whether to enable pull-up load more function |
+| enableSmartPreload | bool? | null | Whether to enable smart preload (preload based on half of the last load height), uses global configuration by default |
+| onRefresh | VoidCallback? | - | Pull-down refresh callback |
+| onLoading | VoidCallback? | - | Pull-up load more callback |
+| scrollDirection | Axis? | - | Scroll direction (copied from ScrollView) |
+| reverse | bool? | - | Whether to reverse scroll (copied from ScrollView) |
+| scrollController | ScrollController? | - | Scroll controller (copied from ScrollView) |
+| primary | bool? | - | Whether to use primary scroll controller (copied from ScrollView) |
+| physics | ScrollPhysics? | - | Scroll physics (copied from ScrollView) |
+| cacheExtent | double? | - | Cache extent (copied from ScrollView) |
+| semanticChildCount | int? | - | Semantic child count (copied from ScrollView) |
+| dragStartBehavior | DragStartBehavior? | - | Drag start behavior (copied from ScrollView) |
 
 ## RefreshController API
 

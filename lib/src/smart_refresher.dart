@@ -217,6 +217,9 @@ class SmartRefresher extends StatefulWidget {
   /// 拖动开始行为（复制自 ScrollView）
   final DragStartBehavior? dragStartBehavior;
 
+  /// 是否启用智能预加载（基于上一次加载高度的一半进行预加载）
+  final bool? enableSmartPreload;
+
   /// 创建一个带有下拉刷新和上拉加载功能的组件
   ///
   /// **必填参数**：
@@ -265,7 +268,8 @@ class SmartRefresher extends StatefulWidget {
       this.reverse,
       this.physics,
       this.scrollDirection,
-      this.scrollController})
+      this.scrollController,
+      this.enableSmartPreload})
       : builder = null;
 
   /// 创建一个带有下拉刷新和上拉加载功能的组件，使用自定义构建器
@@ -292,6 +296,7 @@ class SmartRefresher extends StatefulWidget {
     this.enablePullUp = false,
     this.onRefresh,
     this.onLoading,
+    this.enableSmartPreload,
   })  : header = null,
         footer = null,
         child = null,

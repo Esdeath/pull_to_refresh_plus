@@ -371,7 +371,8 @@ abstract class LoadIndicatorState<T extends LoadIndicator> extends State<T>
     }
 
     // 智能预加载：当距离底部小于上一次加载高度的一半时触发
-    if (configuration!.enableSmartPreload &&
+    final bool enableSmartPreload = refresher?.enableSmartPreload ?? configuration!.enableSmartPreload;
+    if (enableSmartPreload &&
         lastLoadedHeight > 0 &&
         _position!.maxScrollExtent - _position!.pixels < (lastLoadedHeight * 0.5) &&
         _enableLoading) {

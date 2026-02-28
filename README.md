@@ -50,6 +50,7 @@ SmartRefresher(
   controller: _refreshController,
   enablePullDown: true,  // 启用下拉刷新
   enablePullUp: true,    // 启用上拉加载
+  enableSmartPreload: true, // 启用智能预加载
   onRefresh: _onRefresh,
   onLoading: _onLoading,
   header: const ClassicHeader(),
@@ -144,6 +145,7 @@ class _MyAppState extends State<MyApp> {
           controller: _refreshController,
           enablePullDown: true,
           enablePullUp: true,
+          enableSmartPreload: true, // 启用智能预加载
           onRefresh: _onRefresh,
           onLoading: _onLoading,
           header: const ClassicHeader(),
@@ -316,6 +318,28 @@ class _MyCustomFooterState extends State<MyCustomFooter> {
   }
 }
 ```
+
+## SmartRefresher 参数说明
+
+| 参数 | 类型 | 默认值 | 说明 |
+|------|------|--------|------|
+| controller | RefreshController | - | 控制刷新和加载状态的控制器，不能为空 |
+| child | Widget? | - | 刷新内容组件 |
+| header | Widget? | - | 头部刷新指示器 |
+| footer | Widget? | - | 底部加载更多指示器 |
+| enablePullDown | bool | true | 是否启用下拉刷新功能 |
+| enablePullUp | bool | false | 是否启用上拉加载更多功能 |
+| enableSmartPreload | bool? | null | 是否启用智能预加载（基于上一次加载高度的一半进行预加载），默认使用全局配置 |
+| onRefresh | VoidCallback? | - | 下拉刷新回调 |
+| onLoading | VoidCallback? | - | 上拉加载更多回调 |
+| scrollDirection | Axis? | - | 滚动方向（复制自 ScrollView） |
+| reverse | bool? | - | 是否反向滚动（复制自 ScrollView） |
+| scrollController | ScrollController? | - | 滚动控制器（复制自 ScrollView） |
+| primary | bool? | - | 是否使用 primary scroll controller（复制自 ScrollView） |
+| physics | ScrollPhysics? | - | 滚动物理效果（复制自 ScrollView） |
+| cacheExtent | double? | - | 缓存区域大小（复制自 ScrollView） |
+| semanticChildCount | int? | - | 语义化子组件数量（复制自 ScrollView） |
+| dragStartBehavior | DragStartBehavior? | - | 拖动开始行为（复制自 ScrollView） |
 
 ## RefreshController API
 
