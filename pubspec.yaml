@@ -1,9 +1,9 @@
 name: pull_to_refresh_simple
 description: A powerful Flutter pull-to-refresh and pull-up-to-load-more widget with multiple customizable indicator styles.
 version: 3.0.1
-homepage: https://github.com/Esdeath/pull_to_refresh_simple
-repository: https://github.com/Esdeath/pull_to_refresh_simple
-issue_tracker: https://github.com/Esdeath/pull_to_refresh_simple/issues
+homepage: https://github.com/Esdeath/pull_to_refresh_plus
+repository: https://github.com/Esdeath/pull_to_refresh_plus
+issue_tracker: https://github.com/Esdeath/pull_to_refresh_plus/issues
 
 topics:
   - refresh
@@ -13,7 +13,7 @@ topics:
   - scroll
 
 environment:
-  sdk: '>=3.0.2 <4.0.0'
+  sdk: ">=3.0.2 <4.0.0"
   flutter: ">=1.17.0"
 
 dependencies:
